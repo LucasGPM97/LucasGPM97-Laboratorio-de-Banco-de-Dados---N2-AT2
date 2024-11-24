@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Gerenciador_de_estoque</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- Ou use a versão mais recente -->
+        </dependency>
+
+        <!-- Dependência principal do iText 7 -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext7-core</artifactId>
+            <version>7.2.3</version> <!-- Versão mais recente disponível -->
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Dependência para Layout (com itextpdf.layout.property) -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-layout</artifactId>
+            <version>7.2.3</version> <!-- Versão mais recente disponível -->
+        </dependency>
+
+        <!-- Dependência para manipulação de fontes -->
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itext-font</artifactId>
+            <version>7.2.3</version> <!-- Versão mais recente disponível -->
+        </dependency>
+
+    </dependencies>
+
+</project>
