@@ -151,7 +151,7 @@ public class MovimentacaoView extends JFrame{
         tableModel.setRowCount(0);
         List<Produto> produtos = controller.listar();
         for (Produto produto : produtos){
-            tableModel.addRow(new Object[]{produto.getId(), produto.getNome(),produto.getDescricao(),produto.getCategoria().getNome(),produto.getQuantidade(),produto.getPrecoCompra(),produto.getPrecoVenda()});
+            tableModel.addRow(new Object[]{produto.getId(), produto.getNome(),produto.getDescricao(),(produto.getCategoria() != null) ? produto.getCategoria().getNome() : "null",produto.getQuantidade(),produto.getPrecoCompra(),produto.getPrecoVenda()});
         }
     }
 
